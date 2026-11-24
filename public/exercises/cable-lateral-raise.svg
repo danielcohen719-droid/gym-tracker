@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#C8F542"/>
+    </marker>
+  </defs>
+  <rect width="600" height="400" fill="#1b1e24"/>
+  <!-- floor -->
+  <rect x="0" y="368" width="600" height="32" fill="#15171c"/>
+  <!-- cable machine column + low pulley -->
+  <rect x="48" y="36" width="46" height="334" rx="6" fill="#2c313a"/>
+  <rect x="58" y="60" width="26" height="120" rx="4" fill="#3a404b"/>
+  <circle cx="108" cy="340" r="13" fill="#8a93a3"/>
+  <circle cx="108" cy="340" r="5" fill="#2c313a"/>
+  <!-- start position (faded) -->
+  <g opacity="0.35" stroke-linecap="round" fill="none">
+    <line x1="108" y1="340" x2="352" y2="262" stroke="#9aa3b2" stroke-width="3"/>
+    <line x1="342" y1="146" x2="352" y2="258" stroke="#d9dee7" stroke-width="20" stroke-dasharray="2 12"/>
+  </g>
+  <!-- body -->
+  <g stroke="#d9dee7" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <line x1="286" y1="252" x2="276" y2="364" stroke-width="22"/>
+    <line x1="314" y1="252" x2="326" y2="364" stroke-width="22"/>
+    <path d="M258 146 L342 146 L326 256 L274 256 Z" fill="#d9dee7" stroke-width="12"/>
+    <line x1="258" y1="148" x2="246" y2="252" stroke-width="20"/>
+    <line x1="300" y1="122" x2="300" y2="140" stroke-width="16"/>
+  </g>
+  <circle cx="300" cy="96" r="28" fill="#d9dee7"/>
+  <!-- cable to end position -->
+  <line x1="108" y1="340" x2="472" y2="160" stroke="#9aa3b2" stroke-width="3" stroke-linecap="round"/>
+  <!-- working arm, end position (shoulder height, soft elbow) -->
+  <polyline points="342,148 410,150 470,160" fill="none" stroke="#d9dee7" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="462" y="146" width="22" height="28" rx="5" fill="#C8F542"/>
+  <!-- motion arrow -->
+  <path d="M372 262 Q 470 258 486 196" fill="none" stroke="#C8F542" stroke-width="7" stroke-linecap="round" marker-end="url(#ah)"/>
+  <!-- shoulder-height guide -->
+  <line x1="340" y1="146" x2="560" y2="146" stroke="#C8F542" stroke-width="2" stroke-dasharray="6 8" opacity="0.6"/>
+</svg>
